@@ -150,3 +150,6 @@ Once the ‘poc’ file is run, the user is provided with root access as seen be
 
 </details>
 
+## ToE Protection and Mitigation
+
+## Maintaining Access
