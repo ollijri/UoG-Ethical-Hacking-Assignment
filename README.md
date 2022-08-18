@@ -112,3 +112,18 @@ Listing all directories gives the file “.Flag4”. Reading the contents gives 
 
 </details>
 
+<details>
+<summary>	Flag 5 – Root Access (CVE-2021-4034) </summary>
+<p><p/>
+The vulnerability chosen was ‘CVE-2021-4034’. This is a vulnerability of the ‘pkexec’ toolkit. This toolkit is dangerous enough as its purpose is to “allow unprivileged users to run commands as privileged users according to predefined policies”. This exploit makes use of this to cause an unauthorised local privilege escalation on the target machine.
+
+Looking up the name in the ToE terminal confirms this toolkit is present.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185359889-4333051e-6498-480f-8c5d-594106d1b9a8.png">
+</p>
+
+The exploit works by running the below script, created by Andris Raugulis on github. This script works as the version of pkexec on the ToE doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. 
+
+</details>
+
