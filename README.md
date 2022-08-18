@@ -132,10 +132,21 @@ The exploit works by running the below script, created by Andris Raugulis on git
   On the ToE which is accessible through the ‘orga’ account, this is copied line for line and put in a file named ‘exploit.c’.
   
   Next step is to run the code with the following command, generating the executable ‘poc’:
+  <p><p/>
+  
   ![image](https://user-images.githubusercontent.com/66912443/185360620-66e12e7b-f856-4a84-bc8a-16c2e5d07484.png)
   ![image](https://user-images.githubusercontent.com/66912443/185360640-cf027a9b-4746-4f7c-9fcc-626c85c3e428.png)
 
-
+Once the ‘poc’ file is run, the user is provided with root access as seen below:
+  <p><p/>
   
+  ![image](https://user-images.githubusercontent.com/66912443/185360880-8142754b-39b9-4331-ab3a-01a51191fbf3.png)
+
+  This leads to being able to find Flag 5 in the ‘root’ directory.
+  
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185361007-6f9d0bb1-05f9-4696-a489-9c04f2f6f841.png">
+</p>
+
 </details>
 
