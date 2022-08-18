@@ -71,5 +71,13 @@ From the two databases revealed from the previous command, ‘joombla’ was cho
   <img src="https://user-images.githubusercontent.com/66912443/185355739-f4954333-5cf6-40d4-a57a-39064d4417b2.png">
 </p>
 
+  To try and locate another password, john was run for a while without a password list, this cracked another hash revealing it to be the word “cookie”. This belongs to the admin account ‘Biscuit’.
+  
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185355946-c6a5beae-49b4-4571-b744-4080a334dc7e.png">
+</p>
+  
 </details>
+
+
 
