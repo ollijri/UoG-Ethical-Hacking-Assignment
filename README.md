@@ -125,5 +125,17 @@ Looking up the name in the ToE terminal confirms this toolkit is present.
 
 The exploit works by running the below script, created by Andris Raugulis on github. This script works as the version of pkexec on the ToE doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. 
 
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185360444-5032c5b2-32d4-4ff9-87df-1a16e49ba84d.png">
+</p>
+  
+  On the ToE which is accessible through the ‘orga’ account, this is copied line for line and put in a file named ‘exploit.c’.
+  
+  Next step is to run the code with the following command, generating the executable ‘poc’:
+  ![image](https://user-images.githubusercontent.com/66912443/185360620-66e12e7b-f856-4a84-bc8a-16c2e5d07484.png)
+  ![image](https://user-images.githubusercontent.com/66912443/185360640-cf027a9b-4746-4f7c-9fcc-626c85c3e428.png)
+
+
+  
 </details>
 
