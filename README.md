@@ -36,7 +36,12 @@ Navigating to the directory ‘/administrator/’ found from a guess of common a
   <img src="https://user-images.githubusercontent.com/66912443/185346752-72464ffc-ab94-4e31-b9c2-c2df1c334a40.png">
 </p>
 
+  On this same page, viewing the page source exposes the version number of joombla as “3.7.0” as seen on line 9.
   
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185352382-b0216087-e585-4f83-b4dc-6d5f813f4562.png">
+</p>
+
   
 </details>
 
