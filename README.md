@@ -79,5 +79,36 @@ From the two databases revealed from the previous command, ‘joombla’ was cho
   
 </details>
 
+<details>
+<summary> Flag 3 – Viewing other users files </summary>
+  <p><p/>
+  By leaving the home directory of ‘orga’ using “cd ..”, it is possible to see all other users that reside on this system. As seen below, under the acount ‘orga’ the user can change directory into another users home directory therefore allowing the viewing of all of their personal files. 
+  
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185356358-d4e77e28-d18e-42b8-b106-22a95c7539d8.png">
+</p>
 
+</details>
+
+<details>
+<summary> Flag 4 – Gaining SSH Access </summary>
+<p><p/>
+Using the username and password of the ‘super user’ account found in flag 2, it was possible to gain access to the ToE using remote ssh connection as the login for the CMS was the same as it was for ssh.
+
+  
+Username: orga@192.168.56.101  
+Password: isaribi
+  
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185356872-4aea575b-5edd-43b9-8ef0-3af6ea979e50.png">
+</p>
+  
+<p><p/>
+Listing all directories gives the file “.Flag4”. Reading the contents gives the following:
+  
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185357491-4eeec548-70fa-46be-ab71-a15c4e40c0a5.png">
+</p>
+
+</details>
 
