@@ -56,13 +56,19 @@ From the two databases revealed from the previous command, ‘joombla’ was cho
   The hashed passwords are put into a text document to be cracked by john. Using the beginning ID ‘$2y$’ it can be determined the passwords are encrypted using blowfish.
   
   <p align="center">
-  <img src="https://user-images.githubusercontent.com/66912443/185354911-efac7419-9228-43c7-9c1b-cdf18a134783.png">
+  <img src="https://user-images.githubusercontent.com/66912443/185355434-d25eb2a1-490a-47da-82ca-5ec0b1dfd68e.png">
 </p>
-
+  
   Now we have the hashes, a wordlist needs to be built to try crack them within reasonable time. To do this, the program ‘CeWl’ is used. The below command is used to set to crawl the website (via IP address) at a depth of 5 with a minimum character count of 3 and put each word found into a file called “passlist”.
   
   <p align="center">
   <img src="https://user-images.githubusercontent.com/66912443/185354999-ddf956fe-032d-4ecd-ac76-7bb005e22062.png">
+</p>
+
+  Now that a wordlist has been created, the program ‘john the ripper’ can be used to crack the hashes. Running the below command results in one hash getting successfully cracked and found to be the word “isaribi”. This belongs to the admin account ‘orga’, a super user .
+  
+   <p align="center">
+  <img src="https://user-images.githubusercontent.com/66912443/185355739-f4954333-5cf6-40d4-a57a-39064d4417b2.png">
 </p>
 
 </details>
