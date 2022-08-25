@@ -2,6 +2,9 @@
 
 <details>
 <summary> Flag 1 – Incorrect categorisation of website. </summary>
+
+____________________________________________________________________________________________________________________
+
 <p><p/>
 To begin, using the output of the initial nmap scan as a base, it is known the ToE has an open port 80. Port 80 is used by HTTP and is the default network port used to send and receive unencrypted web pages. This alludes to the fact this ToE has a webserver running off this IP address.<br/>
 
@@ -15,11 +18,16 @@ Within the website, accessed by putting the IP of the ToE into the URL bar, are 
   <img src="https://user-images.githubusercontent.com/66912443/185343935-6524d0de-03e4-4fc7-aa79-54b8840f9e14.png">
 </p>
 
+____________________________________________________________________________________________________________________
+
 </details>
 
 <details>
 <summary> Flag 2 – Insecure Admin Page (CVE-2017-8917) </summary>
 <p><p/>
+
+____________________________________________________________________________________________________________________
+
 Navigating to the directory ‘/administrator/’ found from a guess of common admin login directories, it is clear the site is running their content management system (CMS) using the web application ‘joomla!’.
 
 <p align="center">
@@ -76,11 +84,16 @@ From the two databases revealed from the previous command, ‘joombla’ was cho
   <p align="center">
   <img src="https://user-images.githubusercontent.com/66912443/185355946-c6a5beae-49b4-4571-b744-4080a334dc7e.png">
 </p>
-  
+
+____________________________________________________________________________________________________________________
+
 </details>
 
 <details>
 <summary> Flag 3 – Viewing other users files </summary>
+  
+  ____________________________________________________________________________________________________________________
+  
   <p><p/>
   By leaving the home directory of ‘orga’ using “cd ..”, it is possible to see all other users that reside on this system. As seen below, under the acount ‘orga’ the user can change directory into another users home directory therefore allowing the viewing of all of their personal files. 
   
@@ -88,11 +101,16 @@ From the two databases revealed from the previous command, ‘joombla’ was cho
   <img src="https://user-images.githubusercontent.com/66912443/185356358-d4e77e28-d18e-42b8-b106-22a95c7539d8.png">
 </p>
 
+____________________________________________________________________________________________________________________
+
 </details>
 
 <details>
 <summary> Flag 4 – Gaining SSH Access </summary>
 <p><p/>
+
+____________________________________________________________________________________________________________________
+
 Using the username and password of the ‘super user’ account found in flag 2, it was possible to gain access to the ToE using remote ssh connection as the login for the CMS was the same as it was for ssh.
 
   
@@ -110,10 +128,15 @@ Listing all directories gives the file “.Flag4”. Reading the contents gives 
   <img src="https://user-images.githubusercontent.com/66912443/185357491-4eeec548-70fa-46be-ab71-a15c4e40c0a5.png">
 </p>
 
+____________________________________________________________________________________________________________________
+
 </details>
 
 <details>
 <summary>	Flag 5 – Root Access (CVE-2021-4034) </summary>
+
+____________________________________________________________________________________________________________________
+
 <p><p/>
 The vulnerability chosen was ‘CVE-2021-4034’. This is a vulnerability of the ‘pkexec’ toolkit. This toolkit is dangerous enough as its purpose is to “allow unprivileged users to run commands as privileged users according to predefined policies”. This exploit makes use of this to cause an unauthorised local privilege escalation on the target machine.
 
@@ -147,5 +170,7 @@ Once the ‘poc’ file is run, the user is provided with root access as seen be
   <p align="center">
   <img src="https://user-images.githubusercontent.com/66912443/185361007-6f9d0bb1-05f9-4696-a489-9c04f2f6f841.png">
 </p>
+
+____________________________________________________________________________________________________________________
 
 </details>
